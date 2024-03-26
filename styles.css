@@ -1,19 +1,18 @@
-:root{
+:root {
     /*These are colors */
     --primary-color: #dfdfe2;
-        --secondary-color: #ffffff;
-        --app-background-color: #4d4d62;
-        --background-color: #1b1b32;
-        --foreground-color: #3b3b4f;
-        --highlight-color: #f1be32;
+    --secondary-color: #ffffff;
+    --app-background-color: #4d4d62;
+    --background-color: #1b1b32;
+    --foreground-color: #3b3b4f;
+    --highlight-color: #f1be32;
 
-        /* these are font sizes */
-        --root-font-size: 16px;
-            font-size: var(--root-font-size);
+    /* these are font sizes */
+    --root-font-size: 16px;
+    font-size: var(--root-font-size);
 
-            /* font-famalies */
-            --font-headline:"Teko",
-                sans-serif
-            --font-family:"Teko",
-                sans-serif;
+    /* font-famalies */
+    --font-headline: "Teko",
+        sans-serif --font-family:"Teko",
+        sans-serif;
 }
