@@ -13,6 +13,13 @@
 
     /* font-famalies */
     --font-headline: "Teko",
-        sans-serif --font-family:"Teko",
         sans-serif;
+         --font-family:"Teko",
+        sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
