@@ -29,3 +29,12 @@ body{
     color: var(--primary-color);
     font-family: var(--font-family) ;
 }
+
+h1{
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+h2{
+    font-size: var(--root-font-size);
+}
