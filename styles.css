@@ -281,4 +281,16 @@ button :focus, .playlist-song :focus{
         scrollbar-color: var(--background-color) var(--secondary-color);
         scrollbar-width: thin;
     }
+
+    #playlist-songs ::-webkit-scrollbar {
+        width : 5px
+    }
+
+    #playlist-songs ::-webkit-scrollbar-track {
+        background: var(--background-color);
+    } 
+
+    #playlist-songs ::-webkit-scrollbar-thumb{
+        background: var(--secondary-color);
+    }
 }
