@@ -2,10 +2,10 @@
     /*These are colors */
     --primary-color: #dfdfe2;
     --secondary-color: #ffffff;
-    --app-background-color: #4d4d62;
+    --app-background-color: #151538;
     --background-color: #1b1b32;
     --foreground-color: #3b3b4f;
-    --highlight-color: #f1be32;
+    --highlight-color: #8b32f1;
 
     /* these are font sizes */
     --root-font-size: 16px;
@@ -213,4 +213,19 @@ button :focus, .playlist-song :focus{
 
 #player-song-title, #player-song-artist{
     margin: 0;
+}
+
+#player-song-artist{
+    color: var(--highlight-color);
+    font-size: 0.75rem;
+}
+
+#player-song-title{
+    font-size: 1.125rem;
+}
+
+.playlist-song-title{
+    font-size: 0.85rem;
+    width:241px;
+    text-align: left;
 }
