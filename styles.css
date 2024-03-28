@@ -329,4 +329,20 @@ button :focus, .playlist-song :focus{
         justify-content: center;
         height: 100%;
     }
+
+    #player-album-art {
+        z-index: -100;
+        height: 280px;
+        box-shadow: none;
+        background: #000;
+    }
+
+    #player-album-art img{
+        width: 100%;
+        opacity: 0.6;
+    }
+
+    .player-display-song-artist > p{
+        white-space: pre-wrap;
+    }
 }
