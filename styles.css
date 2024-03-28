@@ -246,3 +246,9 @@ button :focus, .playlist-song :focus{
     font-family: var(--font-family);
     width: 30px;
 }
+
+.playlist-song-delete{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
