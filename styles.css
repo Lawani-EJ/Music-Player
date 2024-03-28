@@ -293,4 +293,40 @@ button :focus, .playlist-song :focus{
     #playlist-songs ::-webkit-scrollbar-thumb{
         background: var(--secondary-color);
     }
+
+    h1{
+        font-size: 0.813rem;
+    }
+
+    h2{
+        font-size: 0.75rem;
+    }
+
+    .player-bar,
+    .playlist-bar,.player-content, #playlist-songs{
+        width: 280px;
+    }
+
+    .playlist-song{
+        justify-content: space-between;
+    }
+    
+    .playlist-song-title{
+        width: 140px;
+    }
+
+    .playlist-song-artist{
+        width: 40px;
+    }
+
+    .playlist-song-duration > button{
+        padding: 0;
+    }
+
+    .player-content{
+        display: inline;
+        position: relative;
+        justify-content: center;
+        height: 100%;
+    }
 }
