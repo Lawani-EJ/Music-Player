@@ -262,3 +262,10 @@ button :focus, .playlist-song :focus{
 .playlist-song-delete:focus circle{
     fill: #ff0000
 }
+
+@media (max-width: 700px) {
+    .player,
+    .playlist{
+        width: 300px;
+    }
+}
