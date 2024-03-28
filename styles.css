@@ -345,4 +345,15 @@ button :focus, .playlist-song :focus{
     .player-display-song-artist > p{
         white-space: pre-wrap;
     }
+
+    .player-display{
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        background-color: transparent;
+        top: 0;
+        height: 280px;
+        justify-content: space-between;
+        text-align: center;
+    }
 }
