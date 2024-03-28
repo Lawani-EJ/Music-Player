@@ -230,7 +230,7 @@ button :focus, .playlist-song :focus{
     text-align: left;
 }
 
-.playlist-song-artist{
+/* .playlist-song-artist{
     font-size: 0.725rem;
     width: 80px;
-}
+} */
