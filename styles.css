@@ -234,3 +234,8 @@ button :focus, .playlist-song :focus{
     font-size: 0.725rem;
     width: 80px;
 } */
+
+.playlist-song-artist{
+    font-size: 0.725rem;
+    width: 80px;
+}
