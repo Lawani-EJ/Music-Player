@@ -170,3 +170,24 @@ button :focus, .playlist-song :focus{
     align-items: center;
     row-gap: 10px;
 }
+
+#playlist-songs{
+    width: 430px;
+    height: 100%;
+    background-color: var(--foreground-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px 9px;
+    visibility: visible;
+    justify-content: start;
+    list-style: none;
+}
+
+.playlist-song{
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
