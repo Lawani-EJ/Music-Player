@@ -199,3 +199,18 @@ button :focus, .playlist-song :focus{
 [aria-current="true"] p {
     color: var(--highlight-color);
 }
+
+.playlist-song-info{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 7px;
+    padding: 5px 0;
+    font-family: var(--font-family);
+}
+
+#player-song-title, #player-song-artist{
+    margin: 0;
+}
