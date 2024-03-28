@@ -191,3 +191,11 @@ button :focus, .playlist-song :focus{
     align-items: center;
     padding: 5px;
 }
+
+[aria-current="true"] {
+    background-color: var(--background-color);
+}
+
+[aria-current="true"] p {
+    color: var(--highlight-color);
+}
