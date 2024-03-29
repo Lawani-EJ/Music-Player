@@ -9,4 +9,5 @@ const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 
 // started by creating an empty array
+//this array will be used to store all the songs
 const allSongs = []
