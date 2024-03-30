@@ -81,7 +81,7 @@ const allSongs = [
         title: "Valentina",
         artist: "Daniel Caesar",
         duration: "02:34",
-        src: "D:\REWORK ACADEMY\Music-Player\Assets\Songs\Valentina.mp3",
+        src: "Music-Player/Assets/Songs/Valentina.mp3",
     },
 
     {
@@ -92,3 +92,5 @@ const allSongs = [
         src: "Music-Player/Assets/Songs/Yes I_m Changing.mp3",
     },
 ];
+
+const audio = newAudio();
