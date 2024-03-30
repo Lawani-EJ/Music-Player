@@ -99,4 +99,6 @@ let userData = {
     //The current song playing,
     //The current song time,
     //Therefore this object was created
+
+    songs: [...allSongs]
 };
