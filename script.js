@@ -104,7 +104,7 @@ let userData = {
     songs: [...allSongs],// This spread array allows me to copy all the elements from one array to another.
     //It can be also used to concatenate through multiple array's into one. 
 
-
-    currentSong: null,
-    songCurrentTime: 0
+//To handle the current song's information and tracking its playback time
+    currentSong: null, // so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
+    songCurrentTime: 0 // so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
 };
