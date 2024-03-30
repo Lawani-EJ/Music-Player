@@ -100,5 +100,6 @@ let userData = {
     //The current song time,
     //Therefore this object was created
 
-    songs: [...allSongs]
+    songs: [...allSongs]// This spread array allows me to copy all the elements from one array to another.
+    //It can be also used to concatenate through multiple array's into one. 
 };
