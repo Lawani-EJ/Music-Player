@@ -115,4 +115,6 @@ let userData = {
 //It is a function expression, which is a function assigned to a variable,
 //If the function body consists of a single expression you can omit the curly braces and return keyword,
 //This is called an (implicit return). eg: const exampleArrowFunction = (param) => param;
-const renderSongs = array => {};
+const renderSongs = array => {
+    const songsHTML = array.map();
+};
