@@ -109,4 +109,10 @@ let userData = {
     songCurrentTime: 0 // so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
 };
 
+//Now there should be a way to display the songs in the UI
+//Using an arrow function,
+//An arrow function is a shorter and more concise way to write functions in JS
+//It is a function expression, which is a function assigned to a variable,
+//If the function body consists of a single expression you can omit the curly braces and return keyword,
+//This is called an (implicit return). eg: const exampleArrowFunction = (param) => param;
 const renderSongs = array => {};
