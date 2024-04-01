@@ -118,7 +118,10 @@ let userData = {
 const renderSongs = array => {
     const songsHTML = array.map((song) => {
         return `<li id="song-${song.id}" class="playlist-song"></li>
-        <button class="playlist-song-info"><span class="playlist-song-title">${song.title}</span></button>` //what this does is that it interpolates all the elements that are responsible for displaying the song details
+        <button class="playlist-song-info"><span class="playlist-song-title">${song.title}</span>
+        <span class="playlist-song-artist">${song.artist}</span>
+        <span class="playlist-song-duration">${song.duration}</span>
+        </button>` //what this does is that it interpolates all the elements that are responsible for displaying the song details
     }); //The map() method is used to iterate through an array and returns a new array,
     //This is helpful when creating a new array based on the values of an existing array.
 };
