@@ -116,5 +116,5 @@ let userData = {
 //If the function body consists of a single expression you can omit the curly braces and return keyword,
 //This is called an (implicit return). eg: const exampleArrowFunction = (param) => param;
 const renderSongs = array => {
-    const songsHTML = array.map();
+    const songsHTML = array.map((song) => {});
 };
