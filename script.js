@@ -126,4 +126,5 @@ const renderSongs = array => {
         </button>`;//what this does is that it interpolates all the elements that are responsible for displaying the song details
     }).join(""); //the join() method is used for concatenating all the elements of an array in to a simple string that's what happened here //The map() method is used to iterate through an array and returns a new array,
     //This is helpful when creating a new array based on the values of an existing array.
+    playlistSongs.innerHTML = songsHTML
 };
