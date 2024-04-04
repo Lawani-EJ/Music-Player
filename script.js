@@ -106,7 +106,7 @@ let userData = {
 
 //To handle the current song's information and tracking its playback time
     currentSong: null, // so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
-    songCurrentTime: 0 // so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
+    songCurrentTime: 0,// so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
 };
 
 //Now there should be a way to display the songs in the UI
@@ -129,4 +129,6 @@ const renderSongs = array => {
     playlistSongs.innerHTML = songsHTML // this will insert the li element  that i have just created inside the  ul provided in the HTML file
 };
 
-renderSongs(userData?.songs);
+renderSongs(userData?.songs); 
+//This will render all the songs  that are stored inside our `userData` object.
+//It helps prevent errors when accesing nested properties that might be null or undefined
