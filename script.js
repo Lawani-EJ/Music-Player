@@ -128,6 +128,10 @@ const renderSongs = array => {
     }).join(""); //the join() method is used for concatenating all the elements of an array in to a simple string that's what happened here //The map() method is used to iterate through an array and returns a new array,
     //This is helpful when creating a new array based on the values of an existing array.
     playlistSongs.innerHTML = songsHTML;// this will insert the li element  that i have just created inside the  ul provided in the HTML file
+
+    const sortSongs = () =>{
+        
+    } 
 };
 
 renderSongs(userData?.songs);
