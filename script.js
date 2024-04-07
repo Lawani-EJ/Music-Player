@@ -131,6 +131,7 @@ const renderSongs = array => {
 
     const sortSongs = () =>{
         //What this function does is sort the whole songs alphabetically
+        userData?.songs.sort()
     } 
 };
 
