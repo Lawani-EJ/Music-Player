@@ -130,7 +130,7 @@ const renderSongs = array => {
     playlistSongs.innerHTML = songsHTML;// this will insert the li element  that i have just created inside the  ul provided in the HTML file
 
     const sortSongs = () =>{
-        
+        //What this function does is sort the whole songs alphabetically
     } 
 };
 
