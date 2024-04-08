@@ -131,7 +131,7 @@ const renderSongs = array => {
 
     const sortSongs = () =>{
         //What this function does is sort the whole songs alphabetically
-        userData?.songs.sort() //now that all my songs are displayed it would be better sorting them in alphabetical orders
+        userData?.songs.sort((a,b) => {}) //now that all my songs are displayed it would be better sorting them in alphabetical orders
         //I could sort the songs manually in the array but dude ...... thats way too long
         //So im gonna use the sort() method
         //The sort() method helps me convert the elements of the array into strings and sorts them out based in their values in UTF-16 encoding
