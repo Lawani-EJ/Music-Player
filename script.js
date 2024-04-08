@@ -135,6 +135,7 @@ const renderSongs = array => {
         //I could sort the songs manually in the array but dude ...... thats way too long
         //So im gonna use the sort() method
         //The sort() method helps me convert the elements of the array into strings and sorts them out based in their values in UTF-16 encoding
+        //For now i inserted an empty callback function inside the sort method
     } 
 };
 
