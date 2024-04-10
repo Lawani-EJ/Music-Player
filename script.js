@@ -138,6 +138,8 @@ const renderSongs = array => {
             if (a.title > b.title){
                 return 1;
             }
+
+            return 0;
         }) //now that all my songs are displayed it would be better sorting them in alphabetical orders
         //I could sort the songs manually in the array but dude ...... thats way too long
         //So im gonna use the sort() method
