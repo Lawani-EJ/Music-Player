@@ -128,6 +128,7 @@ const renderSongs = array => {
     }).join(""); //the join() method is used for concatenating all the elements of an array in to a simple string that's what happened here //The map() method is used to iterate through an array and returns a new array,
     //This is helpful when creating a new array based on the values of an existing array.
     playlistSongs.innerHTML = songsHTML;// this will insert the li element  that i have just created inside the  ul provided in the HTML file
+};
 
     const sortSongs = () =>{
         //What this function does is sort the whole songs alphabetically
@@ -140,13 +141,13 @@ const renderSongs = array => {
             }
 
             return 0; //By adding this return it leaves the order of the two elements that are unchanged 
-        }) //now that all my songs are displayed it would be better sorting them in alphabetical orders
+        }); //now that all my songs are displayed it would be better sorting them in alphabetical orders
         //I could sort the songs manually in the array but dude ...... thats way too long
         //So im gonna use the sort() method
         //The sort() method helps me convert the elements of the array into strings and sorts them out based in their values in UTF-16 encoding
         //For now i inserted an empty callback function inside the sort method
-    } 
-};
+        return userData?.songs;
+    };
 
 renderSongs(userData?.songs);
 //This will render all the songs  that are stored inside our `userData` object.
