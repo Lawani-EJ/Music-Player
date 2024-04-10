@@ -139,7 +139,7 @@ const renderSongs = array => {
                 return 1;
             }
 
-            return 0;
+            return 0; //By adding this return it leaves the order of the two elements that are unchanged 
         }) //now that all my songs are displayed it would be better sorting them in alphabetical orders
         //I could sort the songs manually in the array but dude ...... thats way too long
         //So im gonna use the sort() method
