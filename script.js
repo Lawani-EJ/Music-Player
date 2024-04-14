@@ -153,3 +153,5 @@ const renderSongs = array => {
 renderSongs(sortSongs()); 
 //This will render all the songs  that are stored inside our `userData` object.
 //It helps prevent errors when accesing nested properties that might be null or undefined
+//But right now The song order has not changed .
+//This is because the updates being made on the sort method will not happen until the sortSongs function is called
