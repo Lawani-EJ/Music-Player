@@ -109,7 +109,10 @@ let userData = {
     songCurrentTime: 0,// so what this is for is the default state of the play button if there were a bunch of songs in the playlist, now it is null because there is nothing playing and the current time is zero so it starts at the beginning so when we click shuffle or next it goes to zero
 };
 
-const playSong = (id) =>{};
+//Beginning to implement functionality 
+const playSong = (id) =>{
+    
+}; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
 //Now there should be a way to display the songs in the UI
 //Using an arrow function,
