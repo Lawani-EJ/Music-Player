@@ -112,8 +112,8 @@ let userData = {
 //Beginning to implement functionality 
 const playSong = (id) =>{
     const song = userData?.songs.find((song) => song.id === id); //this will iterate through the userData?.songs array and search for the song that corresponds to the id passed into the playSong function
-    audio.src = song.src; 
-    audio.title = song.title;
+    audio.src = song.src; //Tells the audio element where to find the audio data for the selected song
+    audio.title = song.title; //Tells the audio element what to display as the title of the song
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
 //Now there should be a way to display the songs in the UI
