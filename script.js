@@ -117,10 +117,10 @@ const playSong = (id) =>{
 
     if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
         audio.currentTime = 0;
-    }
+    } //The if statement will make sure before playing the song it will make sure it will start from the beginning
     else {
         audio.currentTime = userData?.currentTime;
-    }
+    } //The else block will handle the current song's position in the playlist
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
 //Now there should be a way to display the songs in the UI
