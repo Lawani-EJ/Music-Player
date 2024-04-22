@@ -122,7 +122,7 @@ const playSong = (id) =>{
         audio.currentTime = userData?.currentTime;
     } //The else block will handle the current song's position in the playlist
 
-    userData.currentSong = song;
+    userData.currentSong = song; //There is a need to update the current song being played as well as the appearance of the playbutton element.
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
 //Now there should be a way to display the songs in the UI
