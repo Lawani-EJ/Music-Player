@@ -124,7 +124,7 @@ const playSong = (id) =>{
 
     userData.currentSong = song; //There is a need to update the current song being played as well as the appearance of the playbutton element.
     playButton.classList.add("playing");
-    audio.play();
+    audio.play(); //This will look for the class "playing" in the CSS file and add it to the playButton element.
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
 //Now there should be a way to display the songs in the UI
