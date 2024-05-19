@@ -17,7 +17,7 @@ const allSongs = [
         title: "Yam Yam",
         artist: "No Vacation",
         duration: "03:36",
-        src: "Music-Player/Assets/Songs/Yam-Yam.mp3",
+        src: "/Music-Player/Assets/Songs/Yam-Yam.mp3",
     },
 
     {
@@ -25,7 +25,7 @@ const allSongs = [
         title: "Napster",
         artist: "Jean Dawson",
         duration: "02:36",
-        src: "Music-Player/Assets/Songs/Napster.mp3",
+        src: "/Music-Player/Assets/Songs/Napster.mp3",
     },
 
     {
@@ -33,7 +33,7 @@ const allSongs = [
         title: "Playground",
         artist: "Steve-Lacy",
         duration: "03:33",
-        src: "Music-Player/Assets/Songs/Playground.mp3",
+        src: "/Music-Player/Assets/Songs/Playground.mp3",
     },
 
     {
@@ -41,7 +41,7 @@ const allSongs = [
         title: "Redbone",
         artist: "Childish-Gambino",
         duration: "05:27",
-        src: "Music-Player/Assets/Songs/Redbone.mp3",
+        src: "/Music-Player/Assets/Songs/Redbone.mp3",
     },
 
     {
@@ -49,7 +49,7 @@ const allSongs = [
         title: "See You Again",
         artist: "Tyler, The Creator",
         duration: "03:00",
-        src: "Music-Player/Assets/Songs/Telephones.mp3",
+        src: "/Music-Player/Assets/Songs/Telephones.mp3",
     },
 
     {
@@ -57,7 +57,7 @@ const allSongs = [
         title: "Nights",
         artist: "Frank-Ocean",
         duration: "05:07",
-        src: "Music-Player/Assets/Songs/Nights.mp3",
+        src: "/Music-Player/Assets/Songs/Nights.mp3",
     },
 
     {
@@ -65,7 +65,7 @@ const allSongs = [
         title: "Pursuit Of Happiness",
         artist: "Kid-Cudi",
         duration: "04:55",
-        src: "Music-Player/Assets/Songs/Pursuit Of Happiness nightmare.mp3",
+        src: "/Music-Player/Assets/Songs/Pursuit Of Happiness nightmare.mp3",
     },
 
     {
@@ -73,7 +73,7 @@ const allSongs = [
         title: "Telephones",
         artist: "Vacations",
         duration: "03:32",
-        src: "Music-Player/Assets/Songs/Telephones.mp3",
+        src: "/Music-Player/Assets/Songs/Telephones.mp3",
     },
 
     {
@@ -81,7 +81,7 @@ const allSongs = [
         title: "Valentina",
         artist: "Daniel Caesar",
         duration: "02:34",
-        src: "Music-Player/Assets/Songs/Valentina.mp3",
+        src: "/Music-Player/Assets/Songs/Valentina.mp3",
     },
 
     {
@@ -89,7 +89,7 @@ const allSongs = [
         title: "Yes i'm Changing",
         artist: "Tame Impala",
         duration: "04:31",
-        src: "Music-Player/Assets/Songs/Yes I_m Changing.mp3",
+        src: "/Music-Player/Assets/Songs/Yes I_m Changing.mp3",
     },
 ];
 
@@ -136,7 +136,7 @@ const playSong = (id) =>{
 const renderSongs = array => {
     const songsHTML = array.map((song) => {
         return `<li id="song-${song.id}" class="playlist-song"></li>
-        <button class="playlist-song-info"><span class="playlist-song-title">${song.title}</span>
+        <button class="playlist-song-info" onclick = "playSong(${song.id})" ><span class="playlist-song-title">${song.title}</span>
         <span class="playlist-song-artist">${song.artist}</span>
         <span class="playlist-song-duration">${song.duration}</span>
         <button class="playlist-song-delete" aria-label ="Delete ${song.title}">
