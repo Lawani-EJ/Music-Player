@@ -128,7 +128,7 @@ const playSong = (id) =>{
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
 const pauseSong = () =>{
-    
+    userData.songCurrentTime = audio.currentTime;
 }
 
 //Now there should be a way to display the songs in the UI
