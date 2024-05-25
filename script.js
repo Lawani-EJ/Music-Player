@@ -127,6 +127,10 @@ const playSong = (id) =>{
     audio.play(); //This will look for the class "playing" in the CSS file and add it to the playButton element.
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
+const pauseSong = () =>{
+    
+}
+
 //Now there should be a way to display the songs in the UI
 //Using an arrow function,
 //An arrow function is a shorter and more concise way to write functions in JS
