@@ -129,6 +129,8 @@ const playSong = (id) =>{
 
 const pauseSong = () =>{
     userData.songCurrentTime = audio.currentTime;
+    playButton.classList.remove("playing");
+    audio.pause();
 }
 
 //Now there should be a way to display the songs in the UI
