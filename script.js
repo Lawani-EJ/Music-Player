@@ -162,6 +162,8 @@ playButton.addEventListener("click",() => {
     }
 })
 
+pauseButton.addEventListener("click",pauseSong);
+
     const sortSongs = () =>{
         //What this function does is sort the whole songs alphabetically
         userData?.songs.sort((a,b) => {
