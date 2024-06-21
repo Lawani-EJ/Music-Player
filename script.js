@@ -154,6 +154,12 @@ const renderSongs = array => {
     playlistSongs.innerHTML = songsHTML;// this will insert the li element  that i have just created inside the  ul provided in the HTML file
 };
 
+//When working on playing the next song and previous song getting the index of every and each song property of the useData will be implemented in this arrow function
+const getCurrentSongIndex = () =>{
+    // in getting the index of every song the index of array method will return returns the first index at which a given element can be found in the array
+return userData?.songs.indexOf(userData?.currentSong)
+}
+
 playButton.addEventListener("click",() => {
     if(!userData?.currentSong){
         playSong(userData?.songs[0].id)
@@ -183,6 +189,11 @@ pauseButton.addEventListener("click",pauseSong);
         return userData?.songs;
         //Last step for the sortSongs function
     };
+
+    // working on playing the next song this will be implemented in this arroe function
+    const playNextSong = () =>{
+
+    }
 
 renderSongs(sortSongs()); 
 //This will render all the songs  that are stored inside our `userData` object.
