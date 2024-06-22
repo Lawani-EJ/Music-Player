@@ -110,7 +110,7 @@ let userData = {
 };
 
 //Beginning to implement functionality 
-const playSong = (id) =>{
+const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id); //this will iterate through the userData?.songs array and search for the song that corresponds to the id passed into the playSong function
     audio.src = song.src; //Tells the audio element where to find the audio data for the selected song
     audio.title = song.title; //Tells the audio element what to display as the title of the song
@@ -127,7 +127,7 @@ const playSong = (id) =>{
     audio.play(); //This will look for the class "playing" in the CSS file and add it to the playButton element.
 }; //This function takes an id paramenter that would represent the unique identifier of the song the user wants to play
 
-const pauseSong = () =>{
+const pauseSong = () => {
     userData.songCurrentTime = audio.currentTime;
     playButton.classList.remove("playing");
     audio.pause();
@@ -155,47 +155,54 @@ const renderSongs = array => {
 };
 
 //When working on playing the next song and previous song getting the index of every and each song property of the useData will be implemented in this arrow function
-const getCurrentSongIndex = () =>{
+const getCurrentSongIndex = () => {
     // in getting the index of every song the index of array method will return returns the first index at which a given element can be found in the array
-return userData?.songs.indexOf(userData?.currentSong)
+    return userData?.songs.indexOf(userData?.currentSong)
 }
 
-playButton.addEventListener("click",() => {
-    if(!userData?.currentSong){
+playButton.addEventListener("click", () => {
+    if (!userData?.currentSong) {
         playSong(userData?.songs[0].id)
     } else {
         playSong(userData?.currentSong.id);
     }
 })
 
-pauseButton.addEventListener("click",pauseSong);
+pauseButton.addEventListener("click", pauseSong);
+nextButton.addEventListener("click",playNextSong);
 
-    const sortSongs = () =>{
-        //What this function does is sort the whole songs alphabetically
-        userData?.songs.sort((a,b) => {
-            if (a.title < b.title) {
-                return -1;
-            }
-            if (a.title > b.title){
-                return 1;
-            }
+const sortSongs = () => {
+    //What this function does is sort the whole songs alphabetically
+    userData?.songs.sort((a, b) => {
+        if (a.title < b.title) {
+            return -1;
+        }
+        if (a.title > b.title) {
+            return 1;
+        }
 
-            return 0; //By adding this return it leaves the order of the two elements that are unchanged 
-        }); //now that all my songs are displayed it would be better sorting them in alphabetical orders
-        //I could sort the songs manually in the array but dude ...... thats way too long
-        //So im gonna use the sort() method
-        //The sort() method helps me convert the elements of the array into strings and sorts them out based in their values in UTF-16 encoding
-        //For now i inserted an empty callback function inside the sort method
-        return userData?.songs;
-        //Last step for the sortSongs function
-    };
+        return 0; //By adding this return it leaves the order of the two elements that are unchanged 
+    }); //now that all my songs are displayed it would be better sorting them in alphabetical orders
+    //I could sort the songs manually in the array but dude ...... thats way too long
+    //So im gonna use the sort() method
+    //The sort() method helps me convert the elements of the array into strings and sorts them out based in their values in UTF-16 encoding
+    //For now i inserted an empty callback function inside the sort method
+    return userData?.songs;
+    //Last step for the sortSongs function
+};
 
-    // working on playing the next song this will be implemented in this arroe function
-    const playNextSong = () =>{
-
+// working on playing the next song this will be implemented in this arroe function
+const playNextSong = () => {
+    if(userData?.currentSong === null){
+        playSong(userData?.songs[0].id);
+    }else{
+        const currentSongIndex = getCurrentSongIndex();
+        const nextSong = userData?.songs[currentSongIndex + 1];
+        playNextSong(nextSong.id);
     }
+}
 
-renderSongs(sortSongs()); 
+renderSongs(sortSongs());
 //This will render all the songs  that are stored inside our `userData` object.
 //It helps prevent errors when accesing nested properties that might be null or undefined
 //But right now The song order has not changed .
