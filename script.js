@@ -202,6 +202,7 @@ const playNextSong = () => {
     }
 }
 
+//previous function activity function
 const playPreviousSong = () =>{
 
 }
