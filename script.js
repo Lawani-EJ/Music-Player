@@ -200,12 +200,16 @@ const playNextSong = () => {
         const nextSong = userData?.songs[currentSongIndex + 1];
         playNextSong(nextSong.id);
     }
-}
+};
 
 //previous function activity function
 const playPreviousSong = () =>{
-
-}
+    if(userData?.currentSong === null){
+        return
+    }else{
+        const currentSongIndex = getCurrentSongIndex()
+    }
+};
 
 renderSongs(sortSongs());
 //This will render all the songs  that are stored inside our `userData` object.
