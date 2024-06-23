@@ -169,7 +169,7 @@ playButton.addEventListener("click", () => {
 })
 
 pauseButton.addEventListener("click", pauseSong);
-nextButton.addEventListener("click",playNextSong);
+nextButton.addEventListener("click", playNextSong);
 
 const sortSongs = () => {
     //What this function does is sort the whole songs alphabetically
@@ -200,6 +200,10 @@ const playNextSong = () => {
         const nextSong = userData?.songs[currentSongIndex + 1];
         playNextSong(nextSong.id);
     }
+}
+
+const playPreviousSong = () =>{
+
 }
 
 renderSongs(sortSongs());
