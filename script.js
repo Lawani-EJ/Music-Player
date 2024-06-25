@@ -11,7 +11,7 @@ const allSongs = [
     { id: 2, title: "Playground", artist: "Steve-Lacy", duration: "03:33", src: "./Assets/Songs/Playground.mp3" },
     { id: 3, title: "Redbone", artist: "Childish-Gambino", duration: "05:27", src: "./Assets/Songs/Redbone.mp3" },
     { id: 4, title: "See You Again", artist: "Tyler, The Creator", duration: "03:00", src: "./Assets/Songs/See You Again.mp3" },
-    { id: 5, title: "Nights", artist: "Frank-Ocean", duration: "05:07", src: "./Assets/Songs/Pursuit Of Happiness nightmare.mp3" },
+    { id: 5, title: "Nights", artist: "Frank-Ocean", duration: "05:07", src: "./Assets/Songs/Nights.mp3" },
     { id: 6, title: "Pursuit Of Happiness", artist: "Kid-Cudi", duration: "04:55", src: "/Music-Player/Assets/Songs/Pursuit Of Happiness nightmare.mp3" },
     { id: 7, title: "Telephones", artist: "Vacations", duration: "03:32", src: "./Assets/Songs/Telephones.mp3" },
     { id: 8, title: "Valentina", artist: "Daniel Caesar", duration: "02:34", src: "./Assets/Songs/Valentina.mp3" },
